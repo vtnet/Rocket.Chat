@@ -58,7 +58,7 @@ export const createLayoutSettings = () =>
 				multiline: true,
 				public: true,
 			});
-			await this.add('Layout_Home_Custom_Block_Visible', false, {
+			await this.add('Layout_Home_Custom_Block_Visible', true, {
 				type: 'boolean',
 				invalidValue: false,
 				public: true,
@@ -79,7 +79,7 @@ export const createLayoutSettings = () =>
 					},
 				],
 			});
-			await this.add('Layout_Custom_Body_Only', false, {
+			await this.add('Layout_Custom_Body_Only', true, {
 				i18nDescription: 'Layout_Custom_Body_Only_Description',
 				type: 'boolean',
 				invalidValue: false,

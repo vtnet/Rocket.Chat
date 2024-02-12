@@ -105,7 +105,7 @@ export const createGeneralSettings = () =>
 			multiline: true,
 		});
 
-		await this.add('Iframe_Restrict_Access', true, {
+		await this.add('Iframe_Restrict_Access', false, {
 			type: 'boolean',
 			secret: true,
 		});

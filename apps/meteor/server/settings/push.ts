@@ -19,7 +19,7 @@ export const createPushSettings = () =>
 			alert: 'Push_Setting_Requires_Restart_Alert',
 		});
 
-		await this.add('Push_enable_gateway', true, {
+		await this.add('Push_enable_gateway', false, {
 			type: 'boolean',
 			alert: 'Push_Setting_Requires_Restart_Alert',
 			enableQuery: [
@@ -53,7 +53,7 @@ export const createPushSettings = () =>
 				},
 			],
 		});
-		await this.add('Push_production', true, {
+		await this.add('Push_production', false, {
 			type: 'boolean',
 			public: true,
 			alert: 'Push_Setting_Requires_Restart_Alert',
@@ -102,12 +102,12 @@ export const createPushSettings = () =>
 				enableQuery: [],
 				secret: true,
 			});
-			await this.add('Push_gcm_api_key', '', {
+			await this.add('Push_gcm_api_key', 'AAAALk9phYs:APA91bHgxMH26IGHhZ7IIXCGc0HSMrX1ZbwImcQ8zU5-U9ymqwx54aJS_-9CzjqUg622WsySsTszYNx3t-HnkUSALjGzTsp1sK8hMswnL5OY8TKFzX_zhDQKqmk3h_zd9rs83j3qaQtd', {
 				type: 'string',
 				enableQuery: [],
 				secret: true,
 			});
-			return this.add('Push_gcm_project_number', '', {
+			return this.add('Push_gcm_project_number', '198900811147', {
 				type: 'string',
 				public: true,
 				enableQuery: [],

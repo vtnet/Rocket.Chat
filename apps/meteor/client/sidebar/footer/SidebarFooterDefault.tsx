@@ -36,7 +36,7 @@ const SidebarFooterDefault = (): ReactElement => {
 					__html: logo,
 				}}
 			/>
-			<SidebarFooterWatermark />
+			{/*<SidebarFooterWatermark />*/}
 		</Footer>
 	);
 };

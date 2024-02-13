@@ -9,19 +9,19 @@ export const createLayoutSettings = () =>
 				enterprise: true,
 				invalidValue: false,
 			});
-			await this.add('Layout_Login_Hide_Title', false, {
+			await this.add('Layout_Login_Hide_Title', true, {
 				type: 'boolean',
 				public: true,
 				enterprise: true,
 				invalidValue: false,
 			});
-			await this.add('Layout_Login_Hide_Powered_By', false, {
+			await this.add('Layout_Login_Hide_Powered_By', true, {
 				type: 'boolean',
 				public: true,
 				enterprise: true,
 				invalidValue: false,
 			});
-			await this.add('Layout_Login_Template', 'horizontal-template', {
+			await this.add('Layout_Login_Template', 'vertical-template', {
 				type: 'select',
 				values: [
 					{
